@@ -20,5 +20,10 @@ def mostre_palavra_terminal(palavra, caracteres_usados): # Como a palavra aparec
             palavra_ao_usuario += '-'
     print(f'Palavra: {palavra_ao_usuario}')
 
-def mostre_quantidade_de_erros(num_tent_rest):
-    print(f'Número de erros restantes: {num_tent_rest}')
+def mostre_quantidade_de_erros(NUM_MAX_ERRO, num_erro):
+    print(f'Número de erros restantes: {NUM_MAX_ERRO - num_erro}')
+
+def mostre_estado_atual(palavra, caracteres_usados, num_erro, NUM_MAX_ERRO): # Estado atual
+        mostre_palavra_terminal(palavra, caracteres_usados)
+        print(f'Letras já utilizadas: {caracteres_usados}')
+        mostre_quantidade_de_erros(NUM_MAX_ERRO, num_erro)
