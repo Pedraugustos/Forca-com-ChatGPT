@@ -41,3 +41,4 @@ def mensagem_de_derrota():
     print('Você perdeu!')
     print(f'A palavra era: {palavra}')
     print()
+
