@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-proj-OpKfM1h17Q6XpfpzX72eT3BlbkFJ4H1fSV1zGykNCmn7xC0M")
+client = OpenAI(api_key="sk-proj-MwPoNuFPgcNXbl18hx1ST3BlbkFJl4XoU3aIiFo8AtbSefrU")
 
 NUM_MAX_ERRO = 5 # Número máximo de tentativas
 
