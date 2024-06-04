@@ -35,3 +35,9 @@ def mensagem_de_vitoria():
     print('Você ganhou!')
     print(f'A palavra era: {palavra}')
     print()
+
+def mensagem_de_derrota():
+    print()
+    print('Você perdeu!')
+    print(f'A palavra era: {palavra}')
+    print()
