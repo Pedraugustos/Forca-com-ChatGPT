@@ -3,10 +3,10 @@ import os
 
 palavra_forca = ['pensamento'] # substituir depois por uma do ChatGPT
 
-def escolha_palavra(): # Escolher uma palavra da lista de palavras
+def escolha_palavra():
     return palavra_forca[0]
 
-def mostre_palavra_terminal(palavra, caracteres_usados): # Como a palavra aparecerá no terminal "---...-"
+def mostre_palavra_terminal(palavra, caracteres_usados):
     palavra_ao_usuario = ''
     for letra in palavra:
         if letra in caracteres_usados:
