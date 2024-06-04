@@ -1,4 +1,5 @@
 # funcoes que fazem o jogo rodar
+import os
 
 palavra_forca = ['pensamento'] # substituir depois por uma do ChatGPT
 
@@ -24,6 +25,13 @@ def mostre_quantidade_de_erros(NUM_MAX_ERRO, num_erro):
     print(f'Número de erros restantes: {NUM_MAX_ERRO - num_erro}')
 
 def mostre_estado_atual(palavra, caracteres_usados, num_erro, NUM_MAX_ERRO): # Estado atual
+        os.system('cls')
         mostre_palavra_terminal(palavra, caracteres_usados)
         print(f'Letras já utilizadas: {caracteres_usados}')
         mostre_quantidade_de_erros(NUM_MAX_ERRO, num_erro)
+
+def mensagem_de_vitoria():
+    print()
+    print('Você ganhou!')
+    print(f'A palavra era: {palavra}')
+    print()
